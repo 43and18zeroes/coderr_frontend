@@ -25,6 +25,17 @@ async function setOffersWODetails(filterParams = {}) {
     return offerResp;
 }
 
+// async function setOffersWODetails(filterParams = {}) {    
+//     let offerResp = await getData(OFFER_URL + getOfferFilter(filterParams));
+//     if (offerResp.ok) {
+//         // allOffersLength = offerResp.data.count
+//         allOffersLength = offerResp.data.length;
+//         // currentOffers = offerResp.data.results;
+//         currentOffers = offerResp.data;
+//     }
+//     return offerResp;
+// }
+
 function getOfferFilter(params = {}) {
     return `?creator_id=${params?.creator_id ?? ""}&search=${params?.search ?? ""}&ordering=${params?.ordering ?? ""}&page=${params?.page ?? 1}&max_delivery_time=${params?.max_delivery_time ?? ""}`
 }
