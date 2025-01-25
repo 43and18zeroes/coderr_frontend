@@ -96,6 +96,9 @@ function getBusinessOfferTemplateList(currentOffers) {
 
 function getBusinessOrderTemplateList() {
     let orderListHTML = ``;
+    // console.log(typeof currentOrders);
+    // console.log(currentOrders);
+    // console.log(Array.isArray(currentOrders));
 
     currentOrders.forEach(order => {
         orderListHTML += getBusinessOrderTemplate(order)
