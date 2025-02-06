@@ -192,6 +192,10 @@ main {
     transform: rotate(180deg);
 }
 
+.external__link {
+    color: #01B676;
+}
+
 
 
 @media screen and (max-width: 480px) {
